@@ -1,0 +1,5 @@
+map
+items
+character
+health
+npc's
