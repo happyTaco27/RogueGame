@@ -43,19 +43,6 @@ class TheGrid {
   }
 }
 function keyPressed(){
-  //probably best if we do mouse click for movment
-  // if (key === "w" || key === "W"){
-  //   characterX += 5;
-  // }
-  // else if (key === "s" || key === "S"){
-  //   characterX -= 5;
-  // }
-  // else if (key === "a" || key === "D"){
-  //   characterY += 5;
-  // }
-  // else if (key === "d" || key === "D"){
-  //   characterY -= 5;
-  // }
   if (key === "m" || key === "M"){
     map = true;
   }
