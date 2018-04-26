@@ -1,3 +1,4 @@
+let player1, player2, player3, player4, player5, player6, player7, player8;
 let characterXPos;
 let characterYPos;
 let interact;
@@ -11,6 +12,17 @@ let theMap=[
   [4,2,3,1,1,0],
   [4,4,2,0,0,0],
 ];
+
+function preload(){
+  player1 = loadImage("images/armor move-1.png");
+  player2 = loadImage("images/armor move-2.png");
+  player3 = loadImage("images/armor move-3.png");
+  player4 = loadImage("images/armor move-4.png");
+  player5 = loadImage("images/armor move-5.png");
+  player6 = loadImage("images/armor move-6.png");
+  player7 = loadImage("images/armor move-7.png");
+  player8 = loadImage("images/armor move-8.png");
+}
 
 function setup() {
   createCanvas(windowWidth,windowHeight);
@@ -32,7 +44,8 @@ function map()  {
 }
 function draw(){
   background(255);
-  map();
+
+  // map();
 }
 class TheGrid {
   //making the map
@@ -66,4 +79,8 @@ class TheGrid {
       }
     }
   }
+}
+//movement -Michael
+function playerSpriteAnimation(){
+mo
 }
