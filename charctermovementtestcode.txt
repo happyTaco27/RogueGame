@@ -18,7 +18,7 @@ function setup(){
 
 function draw(){
   background(255);
-  image(player1, characterXPos, characterYPos);
+  image(playerSprite[i], characterXPos, characterYPos);
 }
 
 function playerSpriteAnimation(){
@@ -27,8 +27,21 @@ function playerSpriteAnimation(){
 	clickedMouseY = mouseY;
 	for (let x =characterXPos; x < clickedMouseX; x++){
 		for (let y =characterYPos; y < clickedMouseY; y++){
-			
+			for (let i = 0; i<playerSprite.length; i++){
+				image(playerSprite[i], characterXPos, characterYPos);
+				if (i >= playerSprite.length){
+					i = 0;
+				}
+			}
+			if (y >= clickedMouseY){
+				let characterYPos = clickedMouseY;
+			}
+		}
+		if (x >= clickedMouseX){
+			let characterXPos = clickedMouseX;	
 		}
 	}
   }
 }
+
+
